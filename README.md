@@ -1,15 +1,20 @@
+[![MasterHead](programming.gif)](https://bharathajjarapu.github.io)
+
 Hi ![](https://user-images.githubusercontent.com/18350557/176309783-0785949b-9127-417c-8b55-ab5a4333674e.gif) , My name is Bharath Ajjarapu
 ========================================================================================================================================
+<img align="right" alt="Coding" width="250" src="https://github.com/bharathajjarapu/bharathajjarapu/blob/main/Profile.png">
 
-I'm a Student at VNRVJIET.
---------------------------
+-   🌍  I'm based in Hyderabad
+  
+-   🖥️  See my portfolio at [here](http://bharathajjarapu.github.io)
+  
+-   ✉️  You can contact me at [bharathajjarapu@pm.me](mailto:bharathajjarapu@pm.me)
+  
+-   🚀  I'm currently working on [Medical Chatbot using NLP](http://github.com/bharathajjarapu/archealth)
 
-*   🌍  I'm based in Hyderabad
-*   🖥️  See my portfolio at [here](http://bharathajjarapu.github.io)
-*   ✉️  You can contact me at [bharathajjarapu@pm.me](mailto:bharathajjarapu@pm.me)
-*   🚀  I'm currently working on [Medical Chatbot using NLP](http://github.com/bharathajjarapu/archealth)
-*   🧠  I'm learning Web Development and AI
-*   ⚡  I'm also intersted in Android and Linux
+-   🧠  I'm learning Web Development and AI
+
+-   ⚡  I'm also intersted in Android and Linux
 
 ### Skills 
 <p align="left">
