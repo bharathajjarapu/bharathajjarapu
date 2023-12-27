@@ -19,14 +19,6 @@
 <img src="https://skillicons.dev/icons?i=c,cpp,java,python,r,html,css,javascript,react,bootstrap" /><br>
 <img src="https://skillicons.dev/icons?i=nodejs,django,flask,mysql,postgresql,vscode,git,github,figma,photoshop" /><br>
 
-## Socials
-<p align="center">
-    <a href="https://github.com/bharathajjarapu" target="blank"><img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/github.svg" alt="bharathajjarapu" height="20" width="30" /></a>
-    <a href="https://twitter.com/bharathajjarapu" target="blank"><img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/twitter.svg" alt="bharathajjarapu" height="20" width="30" /></a>
-    <a href="https://linkedin.com/in/bharathajjarapu" target="blank"><img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/linked-in-alt.svg" alt="bharathajjarapu" height="20" width="30" /></a>
-    <a href="https://instagram.com/bharathajjarapu" target="blank"><img src="https://raw.githubusercontent.com/rahuldkjain/github-profile-readme-generator/master/src/images/icons/Social/instagram.svg" alt="bharathajjarapu" height="20" width="30" /></a>
-</p>
-
 ## Badges
 <b>My GitHub Stats</b>
 <div align="center">
