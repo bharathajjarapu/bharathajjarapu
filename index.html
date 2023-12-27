@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet"
+        href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap">
+    <link rel="stylesheet" href="styles.css">
+    <title>itsBharath</title>
+    <style>
+        body {
+            text-align: center;
+            background-color: #1a1a1a;
+            color: #ffffff;
+            font-family: 'Space Grotesk', sans-serif;
+        }
+
+        .rounded-square {
+            border-radius: 10px;
+            padding: 10px;
+            margin: 5px;
+            display: inline-block;
+        }
+
+        .rounded-rectangle {
+            border-radius: 10px;
+            padding: 20px;
+            margin: 10px;
+            background-color: #2c2c2c;
+            transition: background-color 0.3s ease;
+        }
+
+        .rounded-rectangle:hover {
+            background-color: #4d4d4d;
+        }
+
+        section {
+            color: #ffffff;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            padding: 50px 0;
+        }
+
+        h2 {
+            font-size: 5rem;
+            color: #17a2b8;
+            margin-bottom: 30px;
+        }
+
+        p {
+            font-size: 1.5rem;
+            margin-bottom: 20px;
+        }
+
+        img {
+            border-radius: 5px;
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        footer {
+            background-color: transparent;
+            color: #ffffff;
+            text-align: center;
+            padding: 20px 0;
+        }
+
+        nav a {
+            text-decoration: none;
+            color: #ffffff;
+        }
+
+        nav a:hover {
+            color: #17a2b8;
+        }
+    </style>
+</head>
+
+<body>
+
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <a class="navbar-brand" href="#">Bharath</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+            aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav ml-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#home">Home</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#about">About</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#skills">Skills</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#projects">Projects</a>
+                </li>
+            </ul>
+        </div>
+    </nav>
+
+    <section id="home">
+        <div class="container">
+            <img src="https://media4.giphy.com/media/zhYSVCirREeIZtONCI/giphy.gif?cid=ecf05e475a19gsu3q6yj834y8ws8yvouo2gct4ftuhqg4z7z&ep=v1_stickers_search&rid=giphy.gif&ct=s?raw=true"
+                alt="ArcHospital" class="img-fluid" style="width: 300px; height: 300px;">
+            <h2>Hi! I'm Bharath</h2>
+            <p>Hi there! My name is Bharath Ajjarapu, a passionate coder and tech enthusiast. Currently pursuing a degree in
+                B-Tech, I love exploring the realms of hacking, AI, and technology. Let's create something awesome
+                together!</p>
+            <div class="col-md-12 text-center">
+                <a href="https://linkedin.com/in/bharathajjarapu"><i
+                        class="fab fa-linkedin fa-lg text-light mr-3"></i></a>
+                <a href="https://github.com/bharathajjarapu"><i class="fab fa-github fa-lg text-light mr-3"></i></a>
+                <a href="https://instagram.com/bharathajjarapu"><i
+                        class="fab fa-instagram fa-lg text-light mr-3"></i></a>
+                <a href="mailto:itsbharathajjarapu@gmail.com"><i class="far fa-envelope fa-lg text-light"></i></a>
+            </div>
+        </div>
+    </section>
+
+    <section id="about" class="mt-5">
+        <div class="container">
+            <h2>About Me</h2>
+            <p>Constantly learning and hacking my way through challenges. Besides coding, I'm into hackathons,
+                debates, and MUN. An avid reader, writer, and gamer. Let's push the limits together!</p>
+                <img src="https://media0.giphy.com/media/zbMRZx113HKBkeCwrm/giphy.gif?cid=ecf05e475a19gsu3q6yj834y8ws8yvouo2gct4ftuhqg4z7z&ep=v1_stickers_search&rid=giphy.gif&ct=s?raw=true"
+                alt="About" class="img-fluid" style="width: 400px; height: auto;">
+        </div>
+    </section>
+
+    <section id="skills" class="mt-5">
+        <div class="container">
+            <h2 style="margin: 30px;">My Skills</h2>
+            <h3 style="margin: 20px;">Programming Languages</h3>
+            <div class="rounded-square"><i class="fab fa-cuttlefish fa-3x"></i></div>
+            <div class="rounded-square"><i class="fab fa-java fa-3x"></i></div>
+            <div class="rounded-square"><i class="fab fa-python fa-3x"></i></div>
+            <h3 style="margin: 20px;">Web Development</h3>
+            <div class="rounded-square"><i class="fab fa-html5 fa-3x"></i></div>
+            <div class="rounded-square"><i class="fab fa-css3-alt fa-3x"></i></div>
+            <div class="rounded-square"><i class="fab fa-js fa-3x"></i></div>
+            <div class="rounded-square"><i class="fab fa-react fa-3x"></i></div>
+            <div class="rounded-square"><i class="fab fa-node-js fa-3x"></i></div>
+            <div class="rounded-square"><i class="fab fa-bootstrap fa-3x"></i></div>
+            <div class="rounded-square"><i class="fab fa-git fa-3x"></i></div>
+            <div class="rounded-square"><i class="fab fa-github fa-3x"></i></div>
+            <div class="rounded-square"><i class="fab fa-npm fa-3x"></i></div>
+            <div class="rounded-square"><i class="fab fa-node-js fa-3x"></i></div>
+            <h3 style="margin: 20px;">GitHub Status</h3>
+            <img src="https://camo.githubusercontent.com/e95d53b6247b73c2e070c3f08ccda2431ba5681b36eb1fc34a1561bd3e7ec8c6/68747470733a2f2f6769746875622d726561646d652d73747265616b2d73746174732e6865726f6b756170702e636f6d2f3f757365723d62686172617468616a6a6172617075267374726f6b653d666666666666266261636b67726f756e643d3163313931372672696e673d30383931623226666972653d303839316232266375727253747265616b4e756d3d666666666666266375727253747265616b4c6162656c3d30383931623226736964654e756d733d66666666666626736964654c6162656c733d6666666666662664617465733d66666666666626686964655f626f726465723d74727565?raw=true"
+                alt="GitHub Status" class="img-fluid" style="width: 400px; height: auto;">
+        </div>
+    </section>
+
+    <section id="projects" class="mt-5">
+        <div class="container">
+            <h2>My Recent Projects</h2>
+            <div class="row">
+                <div class="col-md-4">
+                    <a href="https://github.com/bharathajjarapu/ArcVision" style="text-decoration: none; color: #ffffff;">
+                        <div class="rounded-rectangle">
+                            <img src="https://github.com/bharathajjarapu/ArcVision/blob/main/images/Index.png?raw=true"
+                                alt="ArcVision" class="img-fluid">
+                            <h4>ArcVision</h4>
+                            <p>An Image Recognition Project which takes images as input and outputs an image with detection
+                                squares.</p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="https://github.com/bharathajjarapu/ArcNews" style="text-decoration: none; color: #ffffff;">
+                        <div class="rounded-rectangle">
+                            <img src="https://github.com/bharathajjarapu/ArcNews/blob/main/ArcNews.png?raw=true"
+                                alt="ArcNews" class="img-fluid">
+                            <h4>ArcNews</h4>
+                            <p>A Basic android news app crafted in Java, leveraging open standards API calls for seamless
+                                news retrieval in realtime. </p>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4">
+                    <a href="https://github.com/bharathajjarapu/ArcHospital" style="text-decoration: none; color: #ffffff;">
+                        <div class="rounded-rectangle">
+                            <img src="https://github.com/bharathajjarapu/ArcHospital/blob/main/docs.png?raw=true"
+                                alt="ArcHospital" class="img-fluid">
+                            <h4>ArcHospital</h4>
+                            <p>A Hospital Database Management using Flask & SQLite and The new proposed system make
+                                difference in real world. </p>
+                        </div>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <footer id="contact" class="text-light mt-3">
+        <div class="container">
+            <div class="row">
+                <div class="col-md-12 text-center">
+                    <p>&copy; 2023 All Rights Reserved - Designed by Bharath</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
+</body>
+</html>
