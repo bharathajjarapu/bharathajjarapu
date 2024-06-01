@@ -11,7 +11,7 @@
 - 🌍 I'm based in Hyderabad
 - 🖥️ See my portfolio [here](http://bharathajjarapu.github.io/bharathajjarapu)
 - ✉️ Contact me at [bharathajjarapu@pm.me](mailto:bharathajjarapu@pm.me)
-- 🚀 Currently working on [Medical Chatbot using NLP](http://github.com/bharathajjarapu/archealth)
+- 🚀 Currently working on [Maria](http://github.com/bharathajjarapu/Maria)
 - 🧠 Learning Web Development and AI
 - ⚡ Interested in Android and Linux
 
