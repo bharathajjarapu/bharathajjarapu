@@ -5,97 +5,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@latest/devicon.min.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
     <link rel="stylesheet"
         href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@300;400;500;600;700&display=swap">
-    <link rel="stylesheet" href="styles.css">
-    <title>itsBharath</title>
-    <style>
-        body {
-            text-align: center;
-            background-color: #1a1a1a;
-            color: #ffffff;
-            font-family: 'Space Grotesk', sans-serif;
-        }
-
-        .rounded-square {
-            border-radius: 10px;
-            padding: 10px;
-            margin: 5px;
-            display: inline-block;
-        }
-
-        .rounded-rectangle {
-            border-radius: 10px;
-            padding: 20px;
-            margin: 10px;
-            background-color: #2c2c2c;
-            transition: background-color 0.3s ease;
-        }
-
-        .rounded-rectangle:hover {
-            background-color: #4d4d4d;
-        }
-
-        section {
-            color: #ffffff;
-            display: flex;
-            flex-direction: column;
-            justify-content: center;
-            align-items: center;
-            padding: 50px 0;
-        }
-
-        h2 {
-            font-size: 5rem;
-            color: #17a2b8;
-            margin-bottom: 30px;
-        }
-
-        p {
-            font-size: 1.5rem;
-            margin-bottom: 20px;
-        }
-
-        img {
-            border-radius: 5px;
-            max-width: 100%;
-            height: auto;
-            margin-bottom: 20px;
-        }
-
-        footer {
-            background-color: transparent;
-            color: #ffffff;
-            text-align: center;
-            padding: 20px 0;
-        }
-
-        nav a {
-            text-decoration: none;
-            color: #ffffff;
-        }
-
-        nav a:hover {
-            color: #17a2b8;
-        }
-
-        .skill-icon {
-            font-size: 3rem;
-            margin: 10px;
-            transition: all 0.3s ease;
-        }
-
-        .skill-icon:hover {
-            color: #fff;
-            text-shadow: 0 0 10px #0fbcd6, 0 0 20px #00dcfe;
-        }
-    </style>
+    <link rel="stylesheet" href="style.css">
+    <title>Bharath</title>
 </head>
 
 <body>
 
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+    <div id="loader-wrapper">
+        <div id="loader-content">
+            <div id="boot-sequence"></div>
+            <div class="progress-bar"></div>
+        </div>
+    </div>
+
+    <nav class="navbar navbar-expand-lg pill-nav">
         <a class="navbar-brand" href="#">Bharath</a>
         <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
             aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -115,6 +42,9 @@
                 <li class="nav-item">
                     <a class="nav-link" href="#projects">Projects</a>
                 </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#contact">Contact</a>
+                </li>
             </ul>
         </div>
     </nav>
@@ -123,20 +53,22 @@
         <div class="container">
             <img src="https://media4.giphy.com/media/zhYSVCirREeIZtONCI/giphy.gif?cid=ecf05e475a19gsu3q6yj834y8ws8yvouo2gct4ftuhqg4z7z&ep=v1_stickers_search&rid=giphy.gif&ct=s?raw=true"
                 alt="ArcHospital" class="img-fluid" style="width: 300px; height: 300px;">
-            <h2>Hi! I'm Bharath</h2>
-            <p>Hi there! My name is Bharath Ajjarapu, a passionate coder and tech enthusiast. Currently pursuing a
-                degree in
-                B-Tech, I love exploring the realms of hacking, AI, and technology. Let's create something awesome
-                together!</p>
+            <h1 data-value="Hi! I'm Bharath Ajjarapu">Hi! I'm Bharath Ajjarapu</h1>
+            <p class="typing" style="padding-bottom: 10px;">Hey there! I'm an AI and Cybersecurity Major, building cool
+                AI Experiences &<br> I'm also
+                a creative web designer and developer working with minimal, dark & fluent designs</p>
             <div class="col-md-12 text-center">
                 <a href="https://github.com/bharathajjarapu"><i
-                        class="fab fa-github fa-lg text-light mr-3 skill-icon"></i></a>
+                        class="fab fa-github fa-lg text-light mr-3 social-icons"></i></a>
                 <a href="https://twitter.com/bharathajjarapu"><i
-                        class="fab fa-twitter fa-lg text-light mr-3 skill-icon"></i></a>
+                        class="fab fa-twitter fa-lg text-light mr-3 social-icons"></i></a>
                 <a href="https://linkedin.com/in/bharathajjarapu"><i
-                        class="fab fa-linkedin fa-lg text-light mr-3 skill-icon"></i></a>
+                        class="fab fa-linkedin fa-lg text-light mr-3 social-icons"></i></a>
                 <a href="mailto:itsbharathajjarapu@gmail.com"><i
-                        class="far fa-envelope fa-lg text-light skill-icon"></i></a>
+                        class="far fa-envelope fa-lg text-light social-icons"></i></a>
+            </div>
+            <div class="btn-container" style="padding-top: 10px;">
+                <a href="blob:https://github.com/ca07466f-03ca-4a62-805b-f05c24df1d6b" class="resbtn">Resume</a>
             </div>
         </div>
     </section>
@@ -144,87 +76,274 @@
     <section id="about" class="mt-5">
         <div class="container">
             <h2>About Me</h2>
-            <p>Constantly learning and hacking my way through challenges. Besides coding, I'm into hackathons,
-                debates, and MUN. An avid reader, writer, and gamer. Let's push the limits together!</p>
-            <button class="btn"
-                onclick="window.location.href='https://github.com/bharathajjarapu/bharathajjarapu/raw/main/Resume.pdf'">
-                <i class="fa fa-download"></i> Resume
-            </button><br><br>
-            <img src= "https://camo.githubusercontent.com/bf97c88d6c2ba6be4991cfc7d0f05e7f0b2df6c9a51606b3c4eccd693aaeedef/68747470733a2f2f6769746875622d726561646d652d73747265616b2d73746174732e6865726f6b756170702e636f6d2f3f757365723d62686172617468616a6a6172617075267374726f6b653d666666666666266261636b67726f756e643d3163313931372672696e673d30383931623226666972653d303839316232266375727253747265616b4e756d3d666666666666266375727253747265616b4c6162656c3d30383931623226736964654e756d733d66666666666626736964654c6162656c733d6666666666662664617465733d66666666666626686964655f626f726465723d74727565" href="https://github.com/bharathajjarapu" alt="GitHub Status" class="img-fluid"
-                style="width: 800px; height: auto;">
+            <p>I started as a Hacker in my childhood. I've always thought Cybersecurity was
+                pretty cool, so I self-taught Hacking & Cybersecurity. Along the College, I stumbled upon Generative AI,
+                which was just starting to gain traction and opened up alot of possibilities for me.
+            </p>
+            <div class="about-nav-container">
+                <div class="about-nav">
+                    <div class="slider"></div>
+                    <button class="nav-btn active" data-target="blogs">Skills</button>
+                    <button class="nav-btn" data-target="github">Github</button>
+                </div>
+            </div>
+            <br>
+            <div class="about-content">
+                <div class="content-section blogs active">
+                    <h3>What I Can Help You With</h3><br>
+                    <div class="row">
+                        <div class="col-md-8 mb-4">
+                            <div class="glass-container" style="height: 400px;">
+                                <img src="https://upload.wikimedia.org/wikipedia/commons/thumb/6/69/Th%C3%A9%C3%A2tre_D%E2%80%99op%C3%A9ra_Spatial.png/1280px-Th%C3%A9%C3%A2tre_D%E2%80%99op%C3%A9ra_Spatial.png"
+                                    alt="AI Model Development" class="imgs">
+                                <div class="contents">
+                                    <h4>Build & Train Gen AI Models</h4>
+                                    <p>Create and Fine-Tune generative AI applications for tasks such as Image,Speech,
+                                        Language generation and more, using cutting-edge technologies like RAG, GPT,
+                                        Multimodal Transformers & Transformer.js, with efficient methods.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 mb-4">
+                            <div class="glass-container" style="height: 400px;">
+                                <img src="https://cdn.pixabay.com/photo/2024/01/24/21/41/woman-8530607_1280.png"
+                                    alt="Web and App Design" class="imgs">
+                                <div class="contents">
+                                    <h4>Web/App Design</h4>
+                                    <p>Design intuitive and visually appealing user interfaces for both web and mobile
+                                        applications.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-4 mb-4">
+                            <div class="glass-container" style="height: 400px;">
+                                <img src="https://images.pexels.com/photos/1054397/pexels-photo-1054397.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                                    alt="Backend & DevOps" class="imgs">
+                                <div class="contents">
+                                    <h4>Backend & DevOps</h4>
+                                    <p>Develop robust backend systems and implement efficient DevOps pipelines to
+                                        automate deployment, monitoring, and scaling, ensuring performance and
+                                        reliability of applications.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="col-md-8 mb-4">
+                            <div class="glass-container" style="height: 400px;">
+                                <img src="https://images.pexels.com/photos/270632/pexels-photo-270632.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2"
+                                    alt="Full Stack Development" class="imgs">
+                                <div class="contents">
+                                    <h4>Build Full Stack Websites</h4>
+                                    <p>Design and develop complete full-stack websites, from responsive front-end<br>
+                                        designs to scalable back-end systems, ensuring seamless integration <br>and
+                                        optimal
+                                        performance across all devices.</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <br><br>
+                    <h3>My Blogs</h3><br>
+                    <div class="row">
+                        <div class="col-md-6 mb-4">
+                            <div class="glass-container" style="height: 400px; ">
+                                <img src="https://miro.medium.com/v2/resize:fit:1100/format:webp/1*DuAQc1p1Kh9R6uw7W5gRYA.png"
+                                    alt="GitHub Languages" class="imgs">
+                                <div class="contents">
+                                    <h4>Best Apps made for Windows <br> using WINUI</h4>
+                                    <a href="https://medium.com/@bharathajjarapu/best-apps-made-for-windows-winui-d7aa6cfbac6e"
+                                        style="text-decoration: none;" class="resbtn">Blog Link</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="col-md-6 mb-4">
+                            <div class="glass-container" style="height: 400px;">
+                                <img src="https://miro.medium.com/v2/resize:fit:1100/format:webp/0*VfCpthWY7pld0Lqj.jpg"
+                                    alt="GitHub Languages" class="imgs">
+                                <div class="contents">
+                                    <h4>You Are Wrong About Prompting LLMs : Here’s Why</h4>
+                                    <a href="https://medium.com/@bharathajjarapu/you-are-wrong-about-prompting-llms-heres-why-a533a66c29e3"
+                                        style="text-decoration: none;" class="resbtn">Blog Link</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="content-section github">
+                    <div class="about-container">
+                        <img src="https://github-readme-streak-stats.herokuapp.com/?user=bharathajjarapu&stroke=ffffff&theme=transparent&ring=0891b2&fire=0891b2&currStreakNum=ffffff&currStreakLabel=0891b2&sideNums=ffffff&sideLabels=ffffff&dates=ffffff&hide_border=true"
+                            href="https://github.com/bharathajjarapu" alt="GitHub Streak" class="img-fluid"
+                            style="width: 800px; height: auto;">
+                    </div>
+                    <br>
+                    <div class="about-container">
+                        <img src="https://github-readme-activity-graph.vercel.app/graph?username=bharathajjarapu&radius=16&theme=high-contrast&area=true&order=5&hide_border=true&hide_title=true&bg_color=0"
+                            alt="GitHub Status" class="img-fluid" style="width: 800px; height: auto;">
+                    </div>
+                    <br>
+                    <div class="about-container" style="display: flex; justify-content: center;">
+                        <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=bharathajjarapu&layout=compact&hide_title=true&theme=transparent&hide_border=true&text_bold=true&text_color=ffffff"
+                            alt="GitHub Languages" class="img-fluid">
+                        <img src="https://github-readme-stats.vercel.app/api?username=bharathajjarapu&hide_title=true&hide_rank=true&show_icons=true&include_all_commits=true&count_private=true&disable_animations=false&theme=transparent&hide_border=true&text_color=ffffff&icon_color=ffffff"
+                            alt="GitHub Stats" class="img-fluid">
+                    </div>
+                    <br>
+                    <div class="github about-container">
+                        <img src="https://raw.githubusercontent.com/bharathajjarapu/bharathajjarapu/output/snake.svg"
+                            alt="Snake animation" class="img-fluid" style="width: 800px; height: auto;">
+                    </div>
+                </div>
+            </div>
         </div>
     </section>
 
     <section id="skills" class="mt-5">
         <div class="container">
-            <h2 class="neon-text">My Skills & Tech I Use</h2>
+            <h2 class="neon-text">Skill Tree</h2>
             <div class="hacker-box">
-                <h3></h3>
-                <i class="fa fa-code skill-icon" title="Programming"></i>
+                <br>
+                <i class="fab devicon-sourcetree-original skill-icon" title="Programming"></i>
+                <br>
                 <h3>Languages</h3>
-                <i class="fab fa-python skill-icon" title="Python"></i>
-                <i class="fab fa-java skill-icon" title="Java"></i>
-                <i class="fab fa-rust skill-icon" title="Rust"></i>
+                <i class="fab devicon-c-plain skill-icon" title="C"></i>
+                <i class="devicon-cplusplus-plain skill-icon" title="C++"></i>
+                <br>
+                <i class="fab devicon-python-plain skill-icon" title="Python"></i>
+                <i class="devicon-java-plain skill-icon" title="Java"></i>
+                <i class="devicon-swift-plain skill-icon" title="Swift"></i>
+                <br><br>
                 <h3>Web Development</h3>
                 <i class="fab fa-html5 skill-icon" title="HTML5"></i>
                 <i class="fab fa-css3-alt skill-icon" title="CSS3"></i>
-                <i class="fab fa-bootstrap skill-icon" title="Bootstrap"></i>
                 <i class="fab fa-js skill-icon" title="JavaScript"></i>
-                <i class="fab fa-react skill-icon" title="React"></i><br>
-                <i class="fab fa-vuejs skill-icon" title="Vue.js"></i>
-                <i class="fas fa-database skill-icon" title="SQL"></i>
-                <i class="fab fas fa-server skill-icon" title="Express.js"></i>
-                <i class="fas fa-pepper-hot skill-icon" title="Flask"></i>
-                <i class="fas fa-cube skill-icon" title="Django"></i>
+                <i class="fab fa-node-js skill-icon" title="NodeJS"></i>
+                <i class="fab fa-react skill-icon" title="React"></i>
+                <br>
+                <i class="fab devicon-express-original skill-icon" title="ExpressJS"></i>
+                <i class="fab devicon-fastapi-plain skill-icon" title="FastAPI"></i>
+                <i class="devicon-postgresql-plain skill-icon" title="Postgres SQL"></i>
+                <i class="devicon-flask-plain skill-icon" title="Flask"></i>
+                <i class="devicon-django-plain skill-icon" title="Django"></i>
+                <br><br>
+                <h3>AI/ML Development</h3>
+                <i class="fab devicon-numpy-plain skill-icon" title="Numpy"></i>
+                <i class="devicon-pandas-plain skill-icon" title="Pandas"></i>
+                <i class="devicon-opencv-plain skill-icon" title="OpenCV"></i>
+                <i class="devicon-anaconda-original skill-icon" title="Anaconda"></i>
+                <i class="devicon-tensorflow-original skill-icon" title="Tensorflow"></i>
+                <i class="devicon-pytorch-plain skill-icon" title="PyTorch"></i>
+                <br><br>
                 <h3>Tools & Cloud Technologies</h3>
                 <i class="fab fa-linux skill-icon" title="Linux"></i>
                 <i class="fab fa-git-alt skill-icon" title="Git"></i>
-                <i class="fas fa-brain skill-icon" title="Tensorflow"></i>
                 <i class="fab fa-docker skill-icon" title="Docker"></i>
                 <i class="fas fa-fire skill-icon" title="Firebase"></i>
                 <i class="fab fa-aws skill-icon" title="AWS"></i>
                 <i class="fas fa-cloud skill-icon" title="Google Cloud"></i>
-
+                <i class="devicon-azure-plain skill-icon" title="Azure"></i>
             </div>
+
+
         </div>
     </section>
 
     <section id="projects" class="mt-5">
         <div class="container">
-            <h2>My Recent Projects</h2>
+            <h2>Recent Projects</h2>
             <div class="row">
-                <div class="col-md-4">
-                    <a href="https://github.com/bharathajjarapu/VoiceCipher"
-                        style="text-decoration: none; color: #ffffff;">
-                        <div class="rounded-rectangle">
-                            <img src="https://github.com/bharathajjarapu/VoiceCipher/blob/main/VC.png?raw=true"
-                                alt="ArcVision" class="img-fluid">
-                            <h4>VoiceCipher</h4>
-                            <p>A Local Speech transcription using transformer.js to run the Speech model directly on
-                                Local JS Runtime</p>
+                <div class="col-md-4 mb-4">
+                    <a href="https://github.com/bharathajjarapu/Maria" style="text-decoration: none;">
+                        <div class="glass-container">
+                            <div class="img-wrapper">
+                                <img src="https://opengraph.githubassets.com/1/bharathajjarapu/Maria"
+                                    alt="ArcHospital" class="img-fluid"
+                                    style="filter: invert(0.9) contrast(1);">
+                            </div>
+                            <div class="content">
+                                <h4>Maria</h4>
+                                <p>A Local LLM Chatbot App for Windows with a Custom made LLM which is finetuned for
+                                    Low-end Devices</p>
+                            </div>
                         </div>
                     </a>
                 </div>
-                <div class="col-md-4">
-                    <a href="https://github.com/bharathajjarapu/Maria" style="text-decoration: none; color: #ffffff;">
-                        <div class="rounded-rectangle">
-                            <img src="https://github.com/bharathajjarapu/Aceify/blob/c1aadc4a2fba9ad40684650ebad29bbdb57ebeb8/Aceify.png?raw=True"
-                                alt="Maria" class="img-fluid">
-                            <h4>Maria</h4>
-                            <p> A Local LLM Chatbot App for Windows with a Custom made LLM which is finetuned for
-                                Low-end Devices</p>
+                <div class="col-md-4 mb-4">
+                    <a href="https://github.com/bharathajjarapu/VoiceCipher" style="text-decoration: none;">
+                        <div class="glass-container">
+                            <div class="img-wrapper">
+                                <img src="https://github.com/bharathajjarapu/VoiceCipher/blob/main/VC.png?raw=true"
+                                    alt="VoiceCipher" class="img-fluid">
+                            </div>
+                            <div class="content">
+                                <h4>VoiceCipher</h4>
+                                <p>A Local Speech transcription using transformer.js to run the Speech model directly on
+                                    Local JS Runtime</p>
+                            </div>
                         </div>
                     </a>
                 </div>
-                <div class="col-md-4">
-                    <a href="https://github.com/bharathajjarapu/ArcHospital"
-                        style="text-decoration: none; color: #ffffff;">
-                        <div class="rounded-rectangle">
-                            <img src="https://github.com/bharathajjarapu/ArcHospital/blob/main/docs.png?raw=true"
-                                alt="ArcHospital" class="img-fluid">
-                            <h4>ArcHospital</h4>
-                            <p>A Hospital Database Management using Flask & SQLite and This makes proposed system work
-                                better in querying.</p>
+                <div class="col-md-4 mb-4">
+                    <a href="https://github.com/bharathajjarapu/Researchify" style="text-decoration: none;">
+                        <div class="glass-container">
+                            <div class="img-wrapper">
+                                <img src="https://github.com/bharathajjarapu/Researchify/blob/test/Researchify.png?raw=true"
+                                    alt="Researchify" class="img-fluid">
+                            </div>
+                            <div class="content">
+                                <h4>Researchify</h4>
+                                <p>This nifty tool harnesses the power of LLMs and advanced web searching to help you
+                                    craft top-notch reports.
+                                </p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <a href="https://github.com/bharathajjarapu/Investa" style="text-decoration: none;">
+                        <div class="glass-container">
+                            <div class="img-wrapper">
+                                <img src="https://github.com/bharathajjarapu/Investa/blob/main/.github/Investa.jpg?raw=true"
+                                    alt="VoiceCipher" class="img-fluid">
+                            </div>
+                            <div class="content">
+                                <h4>Investa Analyzr</h4>
+                                <p>Investa Analyzr is a financial analysis tool that harnesses the power of AI to
+                                    deliver high-grade stock reports.</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <a href="https://github.com/bharathajjarapu/RentaBook" style="text-decoration: none;">
+                        <div class="glass-container">
+                            <div class="img-wrapper">
+                                <img src="https://github.com/bharathajjarapu/RentaBook/raw/main/images/User.png"
+                                    alt="Maria" class="img-fluid">
+                            </div>
+                            <div class="content">
+                                <h4>RentaBook</h4>
+                                <p>A Book Rental Full Stack Website based on Material UI and Simple JS Backend to
+                                    operate Renting of Books</p>
+                            </div>
+                        </div>
+                    </a>
+                </div>
+                <div class="col-md-4 mb-4">
+                    <a href="https://github.com/bharathajjarapu/ArcHospital" style="text-decoration: none;">
+                        <div class="glass-container">
+                            <div class="img-wrapper">
+                                <img src="https://github.com/bharathajjarapu/ArcHospital/blob/main/docs.png?raw=true"
+                                    alt="ArcHospital" class="img-fluid"
+                                    style="filter: invert(0.9) brightness(1.2) contrast(1);">
+                            </div>
+                            <div class="content">
+                                <h4>ArcHospital</h4>
+                                <p>A Hospital Database Management using Flask & SQLite and makes it better at querying.
+                                </p>
+                            </div>
                         </div>
                     </a>
                 </div>
@@ -233,14 +352,30 @@
     </section>
 
     <footer id="contact" class="text-light mt-3">
+        <h4>Designed & Developed<br>by</h4>
+        <img src="https://github.com/bharathajjarapu/bharathajjarapu/blob/output/bharath.gif?raw=true" alt="Bharath" class="sig">
         <div class="container">
+            <div class="col-md-12 text-center">
+                <a href="https://github.com/bharathajjarapu"><i
+                        class="fab fa-github fa-lg text-light mr-3 social-icons"></i></a>
+                <a href="https://twitter.com/bharathajjarapu"><i
+                        class="fab fa-twitter fa-lg text-light mr-3 social-icons"></i></a>
+                <a href="https://linkedin.com/in/bharathajjarapu"><i
+                        class="fab fa-linkedin fa-lg text-light mr-3 social-icons"></i></a>
+                <a href="mailto:itsbharathajjarapu@gmail.com"><i
+                        class="far fa-envelope fa-lg text-light social-icons"></i></a>
+            </div>
+            <br>
             <div class="row">
                 <div class="col-md-12 text-center">
-                    <p>Designed & Developed by Bharath</p>
+                    <p style="font-size: smaller">Built using Vanilla HTML, CSS with Bootstrap CDN, JS and Devicons CDN
+                    </p>
                 </div>
             </div>
         </div>
     </footer>
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="script.js"></script>
     <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"></script>
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"></script>
