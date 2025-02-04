@@ -18,7 +18,7 @@
 <br><br>
 🌍 I'm based in Hyderabad<br><br>
 🖥️ See my portfolio [here](http://bharathajjarapu.github.io/bharathajjarapu)<br><br>
-🚀 Currently working on [Maria](http://github.com/bharathajjarapu/Maria)<br><br>
+🚀 Currently working on [r1Chat](http://github.com/bharathajjarapu/r1Chat)<br><br>
 🧠 Learning Web Development and AI<br><br>
 ✉️ Contact me at [bharathajjarapu@pm.me](mailto:bharathajjarapu@pm.me)<br><br>
 </div>
