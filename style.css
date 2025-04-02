@@ -154,17 +154,6 @@ nav a:hover {
   text-shadow: 0 0 10px #0fbcd6, 0 0 20px #00dcfe;
 }
 
-.skill-icon {
-  font-size: 5rem;
-  margin: 10px;
-  transition: all 0.3s ease;
-}
-
-.skill-icon:hover {
-  color: #fff;
-  text-shadow: 0 0 10px #0fbcd6, 0 0 20px #00dcfe;
-}
-
 .pill-nav {
   background: rgba(18, 18, 18, 0.7);
   backdrop-filter: blur(10px);

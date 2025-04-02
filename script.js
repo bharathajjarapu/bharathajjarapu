@@ -38,32 +38,58 @@ document.addEventListener('DOMContentLoaded', function () {
 });
 
 function hackerTextEffect() {
-  const letters = "abcdefghijklmnopqrstuvwxyz☺Πあいうえお漢字你好世界こんにちは世界안녕하세요세계";
+  const letters = "ABCDEFGHIJKLMNOPQRSTUVWXYZ0123456789!@#$%^&*()_ +abcdefghijklmnopqrstuvwxyzあは世界안녕하세요세계";
   const h1 = document.querySelector("h1");
   const originalText = h1.dataset.value;
+  let currentIndex = 0;
 
-  let interval = null;
-  let iteration = 0;
+  // Reset the h1 content
+  h1.textContent = "";
 
-  clearInterval(interval);
+  // Create initial placeholder spaces
+  const placeholderText = Array(originalText.length).fill(" ").join("");
+  h1.textContent = placeholderText;
 
-  interval = setInterval(() => {
-    h1.innerText = h1.innerText
-      .split("")
-      .map((letter, index) => {
-        if (index < Math.floor(iteration)) {
-          return originalText[index];
-        }
-        return letters[Math.floor(Math.random() * letters.length)];
-      })
-      .join("");
+  const animateNextChar = () => {
+    if (currentIndex >= originalText.length) return;
 
-    if (iteration >= originalText.length) {
-      clearInterval(interval);
-    }
+    let iterations = 0;
+    const maxIterations = 8; // Increase number of iterations for more visible effect
 
-    iteration += 1 / 5;
-  }, 100);
+    const intervalId = setInterval(() => {
+      h1.textContent = h1.textContent
+        .split("")
+        .map((char, index) => {
+          // Keep previously revealed characters
+          if (index < currentIndex) {
+            return originalText[index];
+          }
+          // Animate current character
+          if (index === currentIndex) {
+            if (iterations >= maxIterations) {
+              clearInterval(intervalId);
+              setTimeout(() => {
+                animateNextChar(); // Start next character animation
+              }, 60);
+              return originalText[index];
+            }
+            return letters[Math.floor(Math.random() * letters.length)];
+          }
+          // Keep spaces for unrevealed characters
+          return " ";
+        })
+        .join("");
+
+      iterations++;
+    }, 100); // Faster interval for smoother animation
+
+    currentIndex++;
+  };
+
+  // Add timeout before starting the animation
+  setTimeout(() => {
+    animateNextChar();
+  }, 4000);
 }
 
 document.addEventListener('DOMContentLoaded', () => {
@@ -110,6 +136,10 @@ function typeWriter() {
       mainContent.classList.add('visible');
       setTimeout(() => {
         loader.style.display = 'none';
+        // Start the hacker text effect after boot sequence and fade out
+        setTimeout(() => {
+          hackerTextEffect();
+        }, 1000); // Add a small delay after boot sequence completes
       }, 500);
     }, 500);
   }
