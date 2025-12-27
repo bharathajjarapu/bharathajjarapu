@@ -1,16 +1,10 @@
-<picture>
-  <source media="(prefers-color-scheme: light)">
-  <img
-    src="https://github.com/bharathajjarapu/bharathajjarapu/assets/setup.svg"
-    alt="SVG"
-    style="
-      filter: invert(1);
-      border-radius: 12px;
-      overflow: hidden;
-    "
-  />
-</picture>
+<div align="center">
+  <img src="assets/setup.svg" width="100%" style="border-radius: 12px;">
+</div>
 
+<h1 align="center" style="border: none; font-size: 2.5rem; margin-bottom: 0;">
+  Hi <img src="https://media.giphy.com/media/hvRJCLFzcasrR4ia7z/giphy.gif" width="30px" /> I'm Bharath Ajjarapu
+</h1>
 
 <div style="text-align = center">
 
