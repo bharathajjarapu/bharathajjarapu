@@ -1,14 +1,16 @@
-<h1 align="center">
-    <img src="https://readme-typing-svg.herokuapp.com/?font=SpaceMono&size=25&center=true&vCenter=true&width=300&height=40&color=green&duration=4000&lines=Hi+There!+👋;+Im+Bharath+Ajjarapu!;" />
-</h1>
+<picture>
+  <source media="(prefers-color-scheme: light)">
+  <img
+    src="https://github.com/bharathajjarapu/bharathajjarapu/assets/setup.svg"
+    alt="SVG"
+    style="
+      filter: invert(1);
+      border-radius: 12px;
+      overflow: hidden;
+    "
+  />
+</picture>
 
-<div align="center">
-  <img src="https://profile-counter.glitch.me/bharathajjarapu/count.svg?"  />
-</div>
-
-<div align="center">
-    <img alt="Coding" width="150" src="https://github.com/bharathajjarapu/bharathajjarapu/blob/main/Profile.png">
-</div>
 
 <div style="text-align = center">
 
